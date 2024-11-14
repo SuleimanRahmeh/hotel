@@ -88,16 +88,11 @@ CREATE TABLE `media_chambre` (
   PRIMARY KEY (`id`),
   FOREIGN KEY (`id`) REFERENCES `chambres` (`id`) );
 
-chambreControler.php
-<?php
-include ("../vue/listeChambre.php");
-include ("../modele/chambreModele.php");
-include ("../vue/detailsChambre.php");
+DOC - client leger
 
-if (isset($_GET['id'])) {
-    $chambre = getChambreById($_GET['id']);
-    include "../vue/detailsChambre.php";
-} else {
-    $listeChambre = getListeChambre();
-    include "../vue/listeChambre.php";
-}
+--wireframe
+--MCD
+--use case
+-- cahier de charge PDF
+--chart graphique
+
